@@ -1,12 +1,167 @@
  <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vaibhav Sirohi</title>
+<title>Vaibhav Sirohi Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#050505,#0f172a);
+}
+
+h1{
+font-size:4rem;
+color:#00e5ff;
+text-shadow:0 0 20px #00e5ff;
+}
+
+.subtitle{
+font-size:1.3rem;
+margin-top:15px;
+color:#cbd5e1;
+}
+
+.btn{
+margin-top:30px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#00e5ff;
+color:black;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 25px #00e5ff;
+}
+
+section{
+padding:80px 20px;
+}
+
+.title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:40px;
+color:#00e5ff;
+}
+
+.card-container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.card{
+width:280px;
+padding:20px;
+background:#111;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00e5ff;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#111;
+}
+</style>
+
 </head>
-<body style="background:#0f172a;color:white;text-align:center;padding-top:100px;font-family:Arial;">
+<body>
+
+<div class="hero">
 <h1>Vaibhav Sirohi</h1>
-<h3>BCA Student | C Programmer | Web Developer</h3>
+<p class="subtitle">BCA Student | C Programmer | Web Developer</p>
+<button class="btn">View Projects</button>
+</div>
+
+<section>
+<h2 class="title">About Me</h2>
+<p style="max-width:700px;margin:auto;text-align:center;">
+I am Vaibhav Sirohi, a BCA student passionate about programming,
+web development and learning new technologies.
+</p>
+</section>
+
+<section>
+<h2 class="title">My Skills</h2>
+
+<div class="card-container">
+
+<div class="card">
+<h3>HTML</h3>
+<p>Advanced</p>
+</div>
+
+<div class="card">
+<h3>CSS</h3>
+<p>Intermediate</p>
+</div>
+
+<div class="card">
+<h3>C Programming</h3>
+<p>Intermediate</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="title">Projects</h2>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Personal Portfolio</p>
+</div>
+
+<div class="card">
+<h3>Calculator</h3>
+<p>Basic Calculator Project</p>
+</div>
+
+<div class="card">
+<h3>Future Projects</h3>
+<p>Coming Soon</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Vaibhav Sirohi
+</footer>
+
 </body>
 </html>
